@@ -1,5 +1,5 @@
 --- 
- slug: slugwhatis
+ slug: stackoverflow
  title: Making it to the front page of StackOverflow in a month
  authors: rich 
  tags: [StackOverflow] 
@@ -28,14 +28,14 @@ The plan was to create an account and over the 2020 Christmas break when I had t
 
 ![StackOverflow filters](/img/filters.png)
 
-And when a new question was asked, it would popup in the feed, and at peak times questions could be answered in 5 to 10 minutes. So I set amount monitoring the feed when I was at my computer and if any question popped up where I felt I could give a good answer quickly I would do so.
+And when a new question was asked, it would popup in the feed, and at peak times questions could be answered in 5 to 10 minutes. So I set about monitoring the feed when I was at my computer and if any question popped up where I felt I could give a good answer quickly I would do so.
 
 
 ## The result
 
 To begin with, answering questions would yield little reputation. In some cases you would answer a person's question and they would say thanks but wouldn't mark the answer as answered.
 
-However sometimes you could answer a question that would slowly pickup traction, leading to about 10 upvotes. Meaning it was possible to hit the reputation limit with two good answers. Now I also did get a bit lucky as one question I answered started to trend, and it helped me hit the reputation cap almost four days in a row. And then was when it happend, I hit the front page at rank 27.
+However sometimes you could answer a question that would slowly pickup traction, leading to about 10 upvotes. Meaning it was possible to hit the reputation limit with two good answers. Now I also did get a bit lucky as [one question I answered](https://stackoverflow.com/questions/65534293/stdstring-s1-modern-c-3-vs-stdstring-s1-str-3/65534356#65534356) started to trend, and it helped me hit the reputation cap a few days in a row. And that was when it happend, I hit the front page at rank 27.
 
 ![StackOverflow filters](/img/quarterrank.png)
 ![StackOverflow filters](/img/quarterstats.png)

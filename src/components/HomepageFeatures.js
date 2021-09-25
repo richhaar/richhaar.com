@@ -8,8 +8,7 @@ const FeatureList = [
     //Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Always interested in learning new skills, trying to master existing skills and work on interesting problems. Profiling and optimising C++ is a particular favourite of mine as well as sharing my knowledge with others.
       </>
     ),
   },
@@ -18,8 +17,10 @@ const FeatureList = [
     //Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Tinkering with JavaScript has been fun lately and I've been reading quite a few tech books, I can recommend pretty much any by Scott Meyers or Herb Sutter. In terms of non programming, The Savage Detectives and also Black Rain.
+
+        I got my full motorbike licence back in 2018 and got a road bike, that's been great fun and I'm currently looking at getting a motorcross bike.
+        
       </>
     ),
   },
@@ -28,10 +29,7 @@ const FeatureList = [
     //Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Feel free to get in touch <a href="mailto:rh@richhaar.com">via email</a>.
-
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Feel free to get in touch <a href="mailto:rh@richhaar.com">via email</a> or on LinkedIn.
       </>
     ),
   },
