@@ -20,11 +20,6 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: false,
-          /*{
-          sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/edit/main/website/',
-        },*/
         blog: {
           showReadingTime: true,
           //path: "./blog",
@@ -50,12 +45,6 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           src: 'img/logo.svg',
         },
         items: [
-          /*{
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: 'Tutorial',
-          },*/
           {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/facebook/docusaurus',
@@ -67,15 +56,6 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
       footer: {
         style: 'dark',
         links: [
-          /*{
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
-          },*/
           {
             title: 'Community',
             items: [
