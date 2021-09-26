@@ -1,6 +1,6 @@
 --- 
  slug: stackoverflow
- title: Making it to the front page of StackOverflow in a month
+ title: Making it to the front page on StackOverflow
  authors: rich 
  tags: [StackOverflow] 
 ---

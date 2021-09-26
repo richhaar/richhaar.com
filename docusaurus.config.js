@@ -84,7 +84,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()}. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Richard Haar. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
