@@ -2,21 +2,21 @@
 <rss version="2.0">
     <channel>
         <title>Rich Haar Blog</title>
-        <link>https://www.richhaar.com/</link>
+        <link>https://richhaar.github.io/</link>
         <description>Rich Haar Blog</description>
         <lastBuildDate>Sun, 26 Sep 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <item>
             <title><![CDATA[Multivariable linear regression in Python]]></title>
-            <link>https://www.richhaar.com/multivariable-linear-regression</link>
+            <link>https://richhaar.github.io/multivariable-linear-regression</link>
             <guid>multivariable-linear-regression</guid>
             <pubDate>Sun, 26 Sep 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[Multivariable linear regression is all about taking in a set of data points (x0, x1, &#x2026;,xn, y) and to be able to predict y values for some other data points (x0',x1',&#x2026;,xn'). I'm giving an example here on how to do so in Python as well as computing the coefficient of determination (R2) to see how well the predictor variables model y.]]></description>
         </item>
         <item>
             <title><![CDATA[Making it to the front page on StackOverflow]]></title>
-            <link>https://www.richhaar.com/stackoverflow</link>
+            <link>https://richhaar.github.io/stackoverflow</link>
             <guid>stackoverflow</guid>
             <pubDate>Sat, 25 Sep 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[As we all know StackOverflow can be an intimidating place for new users, as any mistakes are quickly picked up, critcised and questions are closed. You also see the same group of people quick to answer questions (See here for a user answering over 85,000 questions in SQL.) But what if I told you it's possible to hit the front page of StackOverflow within a month.]]></description>
