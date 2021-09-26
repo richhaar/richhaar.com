@@ -26,8 +26,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           path: "./blog",
           routeBasePath: "/",
           // Please change this to your repo.
-          //editUrl: false,
-            //'https://github.com/facebook/docusaurus/edit/main/website/blog/',
+          editUrl: 'https://github.com/richhaar/richhaar.com/edit/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
