@@ -19,6 +19,17 @@
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Using the Visitor pattern in C++17]]></title>
+        <id>visitor-pattern-in-cpp17</id>
+        <link href="https://richhaar.github.io/visitor-pattern-in-cpp17"/>
+        <updated>2021-09-26T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[In C++17, the std::variant and how it fit's into the Visitor pattern.]]></summary>
+        <author>
+            <name>Richard Haar</name>
+            <uri>https://github.com/richhaar</uri>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Making it to the front page on StackOverflow]]></title>
         <id>stackoverflow</id>
         <link href="https://richhaar.github.io/stackoverflow"/>

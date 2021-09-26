@@ -15,6 +15,13 @@
             <description><![CDATA[Multivariable linear regression is all about taking in a set of data points (x0, x1, &#x2026;,xn, y) and to be able to predict y values for some other data points (x0',x1',&#x2026;,xn'). I'm giving an example here on how to do so in Python as well as computing the coefficient of determination (R2) to see how well the predictor variables model y.]]></description>
         </item>
         <item>
+            <title><![CDATA[Using the Visitor pattern in C++17]]></title>
+            <link>https://richhaar.github.io/visitor-pattern-in-cpp17</link>
+            <guid>visitor-pattern-in-cpp17</guid>
+            <pubDate>Sun, 26 Sep 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[In C++17, the std::variant and how it fit's into the Visitor pattern.]]></description>
+        </item>
+        <item>
             <title><![CDATA[Making it to the front page on StackOverflow]]></title>
             <link>https://richhaar.github.io/stackoverflow</link>
             <guid>stackoverflow</guid>
