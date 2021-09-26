@@ -84,9 +84,9 @@ using Shape = std::variant<Circle, Triangle, Square>;
 int main()
 {
     std::vector<Shape> shapes {
-        Triangle(3),
-        Square(4),
-        Circle(10)
+        Triangle(3.0),
+        Square(4.0),
+        Circle(10.0)
     };
 
     return 0;
