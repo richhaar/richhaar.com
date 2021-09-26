@@ -10,7 +10,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/profile3.png',
+  favicon: 'img/favicon.png',
   organizationName: 'richhaar', // Usually your GitHub org/user name.
   projectName: 'richhaar.com', // Usually your repo name.
   trailingSlash: false,
@@ -41,8 +41,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
       navbar: {
         title: 'TECH BLOG',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/profile3.png',
+          alt: 'Blog author picture',
+          src: 'img/profile1.png',
         },
         items: [
             { to: 'about', label: 'About', position: 'left' },
