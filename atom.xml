@@ -6,7 +6,7 @@
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://richhaar.github.io/"/>
     <subtitle>Rich Haar Blog</subtitle>
-    <icon>https://richhaar.github.io/img/profile3.png</icon>
+    <icon>https://richhaar.github.io/img/favicon.png</icon>
     <entry>
         <title type="html"><![CDATA[Multivariable linear regression in Python]]></title>
         <id>multivariable-linear-regression</id>
