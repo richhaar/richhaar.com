@@ -7,7 +7,7 @@
 
 In C++17, the `std::variant` was introduced alongside the `std::visit` function which allows you to implement the Visitor pattern rather easily. To begin with I'll explain how to use the `std::variant` and how it fit's into the Visitor pattern.
 
-<!--truncate--->
+<!--truncate-->
 
 ## Basic Usage
 
