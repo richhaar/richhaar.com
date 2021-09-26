@@ -6,13 +6,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 (module.exports = {
   title: 'Rich Haar',
   tagline: 'Thoughts and tech tips',
-  url: 'https://richhaar.com',
+  url: 'https://www.richhaar.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/profile3.png',
   organizationName: 'richhaar', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  projectName: 'richhaar.com', // Usually your repo name.
 
   presets: [
     [
