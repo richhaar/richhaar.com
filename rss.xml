@@ -4,9 +4,16 @@
         <title>Rich Haar Blog</title>
         <link>https://richhaar.github.io/</link>
         <description>Rich Haar Blog</description>
-        <lastBuildDate>Sun, 26 Sep 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 03 Oct 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[Understanding Type Coercion in JavaScript]]></title>
+            <link>https://richhaar.github.io/javascript-type-coercion</link>
+            <guid>javascript-type-coercion</guid>
+            <pubDate>Sun, 03 Oct 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[JavaScript lets you mix and match types quite happily, and in most cases the result might be exactly what you expect:]]></description>
+        </item>
         <item>
             <title><![CDATA[Multivariable linear regression in Python]]></title>
             <link>https://richhaar.github.io/multivariable-linear-regression</link>
