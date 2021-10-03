@@ -174,7 +174,7 @@ All Objects convert to `true` e.g. `!!{}` equals `true`. However the rules for t
 false
 ```
 
-And the reason why this is false, is because when using `==`, if either value is `true` it is converted to `1` and the comparison is made again:
+And the reason why this is false, is because when using `==`, if either value is the primitive `true` it is converted to `1` and the comparison is made again:
 
 ```javascript
 > [0] == true
@@ -199,19 +199,20 @@ For an additional resource see:
 
 ## Bonus Question
 
-If I use `console.log` on a `Date`, in `Node` I get neither it's `toString` nor it's `valueOf` result but instead something else:
+If I use `console.log` on a `Date`, in `Node` I get neither it's `toString` nor it's `valueOf` result but instead something else. So what is going on here?
 
 ```javascript
-> now
+> console.log(now)
 2021-10-03T14:57:16.802Z
+undefined
 > now.toString()
 'Sun Oct 03 2021 15:57:16 GMT+0100 (British Summer Time)'
 > now.valueOf()
 1633273036802
 ```
 
-So what is going on here? Now if we have a look at the [node documentation](https://nodejs.org/api/console.html#console_console_log_data_args), we see that any argument is passed into [util.format](https://nodejs.org/api/util.html#util_util_format_format_args), and since no format specifier is given, non strings are formatted using [util.inspect](https://nodejs.org/api/util.html#util_util_inspect_object_options) which returns a string
-representation of an object that is intended for debugging. And now since you can browse the node source on Github, we can see what exactly `util.inspect` is doing [here](https://github.com/nodejs/node/blob/master/lib/internal/util/inspect.js). And if you trace it through some more you see the call to `function formatRaw(ctx, value, recurseTimes, typedArray)`.
+Now if we have a look at the [node documentation](https://nodejs.org/api/console.html#console_console_log_data_args), we see that any argument to `console.log` is passed into [util.format](https://nodejs.org/api/util.html#util_util_format_format_args), and since no format specifier is given, non strings are formatted using [util.inspect](https://nodejs.org/api/util.html#util_util_inspect_object_options). And `util.inspect` returns a string
+representation of an object that is intended for debugging. And now since you can browse the Node source on Github, we can see what exactly `util.inspect` is doing [here](https://github.com/nodejs/node/blob/master/lib/internal/util/inspect.js). And if you trace it through some more you see the call to `function formatRaw(ctx, value, recurseTimes, typedArray)`.
 
 And in that function you have:
 
@@ -225,7 +226,7 @@ And in that function you have:
 //...
 ```
 
-So we can see that the Date get's formatted by it's `toISOString` call and we can check that by calling `now.toISOString()`:
+So we can see that the `Date` get's formatted by it's `toISOString` method and we can check that by calling `now.toISOString()`:
 
 ```javascript
 > console.log(now)
@@ -234,5 +235,3 @@ undefined
 > now.toISOString()
 '2021-10-03T14:57:16.802Z'
 ```
-
-In prefer-string, JavaScript converts the object to a primitive value and then converts that primitive to a String if necessary. And the Object to number conversion works similarly, the Object gets converted to a primitive and then a number if necessary.
