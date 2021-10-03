@@ -2,12 +2,12 @@
 slug: javascript-type-coercion
 title: Understanding Type Coercion in JavaScript
 authors: rich
-tags: [javascript]
+tags: [JavaScript]
 ---
 
 # Type Coercion
 
-JavaScript lets you mix and match types quite happily. And for most cases the result might be exactly what you expect:
+JavaScript lets you mix and match types quite happily, and in most cases the result might be exactly what you expect:
 
 ```javascript
 > 'Total : ' + 100
@@ -16,7 +16,7 @@ JavaScript lets you mix and match types quite happily. And for most cases the re
 36
 ```
 
-However you might not get what you naturally expect, especially in more complicated expressions:
+However you might not get what you expect:
 
 ```javascript
 > '15' + 1
@@ -35,13 +35,15 @@ undefined
 false
 ```
 
+<!--truncate-->
+
 :::info Info
-Remember `==` here is the equality operator which attempts to convert and compare operands, whereas `===` strict equality does not do any conversions.
+Remember `==` here is the equality operator which attempts to convert and compare operands, whereas `===` is strict equality and does not do any conversions.
 :::
 
 ## How and why Type Coercion occurs
 
-This automatic conversion of types from one type to another is the result of Type Coercion. And it happens when you use operator on some operand(s) of a different type. In JavaScript there are two main type groups, primitive types and Objects.
+This automatic conversion of types from one type to another is the result of Type Coercion. And it happens when you use operator on some operand(s) which expect a different type than the one(s) you've given. In JavaScript there are two main groups of types: primitive types and Objects.
 
 ### Primitive Types
 
@@ -55,7 +57,7 @@ The primitive types are quite straightforward:
 * null
 * undefined
 
-And when using operators such as `+`, you might have to lookup the [spec](https://es5.github.io/#x11.6.1) and see that if either argument is a string, the other argument will also be converted to a string and then concatenated, otherwise numerical addition is performed. So String concatenation takes precedence, and for the subtraction operator `-`, subtracting strings isn't well defined so each operand is converted to a number.
+If we look at the addition operator `+` [spec](https://es5.github.io/#x11.6.1), you can see that if either argument is a string, the other argument will also be converted to a string and then concatenated, otherwise numerical addition is performed. So String concatenation takes precedence, and for the subtraction operator `-`, subtracting strings isn't well defined so each operand is converted to a number.
 
 ```javascript
 > undefined + 0
@@ -76,9 +78,7 @@ You can explicitly convert types to test the conversion between primitive types,
 
 ### Object types
 
-So then the question is, if the addition operator is well defined for `string` and `number` primitives, what happens when you pass in Object types such as `[]` and `{}`?
-
-An Object may have more than one primitive representation, consider the Date Object as an example:
+So then the question is, if the addition operator is well defined for `string` and `number` primitives, what happens when you pass in Object types such as `[]` and `{}`? Well the operator works on primitive types, so the Object has to be converted to a primitive. And an Object may have more than one primitive representation, consider the Date Object as an example:
 
 ```javascript
 > const now = new Date();
@@ -95,15 +95,13 @@ There are three fundamental algorithms for converting objects to primitive value
 * prefer-number (Return a primitive, number if possible)
 * no-preference (JavaScript built-in types all implement this as prefer-number except Date which uses prefer-string).
 
-Such that when an object needs to be converted to a string, JavaScript converts the object to a primitive value and then converts that primitive to a String if necessary. And the Object to number conversion works similarly, the Object gets converted to a primitive and then a number if necessary.
+Objects will have both `valueOf` and `toString` methods. If the prefer-string algorithm is needed, `toString` will be called. If the result is a primitive which is a non-string, it will be converted to a string. Now if `toString` doesn't exist or if `toString` returns an object then `valueOf` will be called instead. And if that returns an object you'll encounter a TypeError otherwise the primitive returned is converted to a string.
 
-Now the `+` operator works for both `string` and `number` types, and the no-preference rule will be used. `==` also uses the no-preference algorithm.
-
-Now Objects will have both `valueOf` and `toString` methods. If the prefer-string algorithm is needed, `toString` will be called, or if it doesn't exist or returns an Object, `valueOf` will be called and if that is a primitive will use that value otherwise you'll encounter a TypeError.
-
-The prefer-number algorithm will work in a similar way, but will prefer `valueOf` over `toString`.
+The prefer-number algorithm will work in a similar way, but will try `valueOf` over `toString` to begin wtih.
 
 And the no-preference algorithm for built in JavaScript types will use `valueOf` over `toString` apart from the `Date` class.
+
+Now the addition `+` operator works for both `string` and `number` types, and the no-preference rule will be used. `==` also uses the no-preference algorithm.
 
 So what will happen if you do `now + 1` which is a `Date + number`? The no-preference rule will be used and in this case, the Date will be converted to a string and concatenated with 1.
 
@@ -112,7 +110,7 @@ So what will happen if you do `now + 1` which is a `Date + number`? The no-prefe
 'Sun Oct 03 2021 15:57:16 GMT+0100 (British Summer Time)1'
 ```
 
-And if you do `now - 1`, the prefer-number algorithm will be used, converted the Date to a number and subtracting 1 from that:
+And if you do `now - 1`, the prefer-number algorithm will be used, converting the Date to a number and subtracting 1 from that:
 
 ```javascript
 > now - 1
@@ -188,12 +186,16 @@ false
 ```
 
 :::tip Tip
-It can be useful to checkout the documentation for the [abstract equality algoirthm](https://es5.github.io/#x11.9.3). For example is shows that `NaN == NaN` equals `false`.
+It can be useful to checkout the documentation for the [abstract equality algorithm](https://es5.github.io/#x11.9.3). For example is shows that `NaN == NaN` equals `false`.
 :::
 
 ### Summary
 
 In summary, hopefully this clarifies some of the mysteries behind JavaScript type coercion and highlights the importance of checking the ECMAScript specification. And when you do begin to understand type coercion, some of JavaScript's little mysteries start to make sense.
+
+For an additional resource see:
+
+* JavaScript the Definitive Guide - David Flanagan
 
 ## Bonus Question
 
@@ -232,3 +234,5 @@ undefined
 > now.toISOString()
 '2021-10-03T14:57:16.802Z'
 ```
+
+In prefer-string, JavaScript converts the object to a primitive value and then converts that primitive to a String if necessary. And the Object to number conversion works similarly, the Object gets converted to a primitive and then a number if necessary.
