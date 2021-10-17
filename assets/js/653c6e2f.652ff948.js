@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocusaurus=self.webpackChunkdocusaurus||[]).push([[54],{8606:function(e){e.exports=JSON.parse('{"allTagsPath":"/tags","slug":"/tags/puppeteer","name":"Puppeteer","count":1,"permalink":"/tags/puppeteer"}')}}]);

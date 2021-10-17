@@ -4,9 +4,16 @@
         <title>Rich Haar Blog</title>
         <link>https://richhaar.github.io/</link>
         <description>Rich Haar Blog</description>
-        <lastBuildDate>Sun, 03 Oct 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 17 Oct 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[Puppeteer - Browsing the web without a head]]></title>
+            <link>https://richhaar.github.io/puppeteer</link>
+            <guid>puppeteer</guid>
+            <pubDate>Sun, 17 Oct 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[Browsing without a GUI]]></description>
+        </item>
         <item>
             <title><![CDATA[Understanding Type Coercion in JavaScript]]></title>
             <link>https://richhaar.github.io/javascript-type-coercion</link>
