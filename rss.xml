@@ -4,9 +4,16 @@
         <title>Rich Haar Blog</title>
         <link>https://richhaar.github.io/</link>
         <description>Rich Haar Blog</description>
-        <lastBuildDate>Sat, 23 Oct 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 29 Jan 2022 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[Plotting a Map of New York using Collision data]]></title>
+            <link>https://richhaar.github.io/plotting-ny-with-pandas</link>
+            <guid>plotting-ny-with-pandas</guid>
+            <pubDate>Sat, 29 Jan 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[There are a huge amount of datasets available online, you can find many on https//opendata.cityofnewyork.us/.]]></description>
+        </item>
         <item>
             <title><![CDATA[Publishing C++ as a JavaScript NPM package]]></title>
             <link>https://richhaar.github.io/npmpackage</link>
