@@ -7,20 +7,20 @@
 
 # Creating a map of Manhattan roads with openly available data
 
-There are a huge amount of datasets available online, you can find many on https://dataportals.org/ including data for the city of New York found here https://opendata.cityofnewyork.us/.
-And they provide a dataset containing details on [over 1.8 million crashes](https://data.cityofnewyork.us/Public-Safety/Motor-Vehicle-Collisions-Crashes/h9gi-nx95).
+There are a huge amount of datasets available online, you can find many on https://dataportals.org/ including data for the [city of New York](https://opendata.cityofnewyork.us/).
+They provide a dataset containing details on [over 1.8 million crashes](https://data.cityofnewyork.us/Public-Safety/Motor-Vehicle-Collisions-Crashes/h9gi-nx95).
 
-
-<!--truncate-->
 
 ## Plotting the data
 
 Now each crash contains a Latitude and Longitude value for where the collision occurred.
 And with 1.8 million collisions, it should be possible to map New York roads using this data.
 
+<!--truncate-->
+
 ### Step 1, Load the Data
 
-Download the dataset above, load it in via pandas.
+Download the dataset above, load it in via [pandas](https://pandas.pydata.org/).
 
 ```python
 # %% Import the Dataset, assumed in subfolder
