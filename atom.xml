@@ -12,7 +12,7 @@
         <id>plotting-ny-with-pandas</id>
         <link href="https://richhaar.github.io/plotting-ny-with-pandas"/>
         <updated>2022-01-29T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[There are a huge amount of datasets available online, you can find many on https//opendata.cityofnewyork.us/.]]></summary>
+        <summary type="html"><![CDATA[There are a huge amount of datasets available online, you can find many on https://dataportals.org/ including data for the city of New York.]]></summary>
         <author>
             <name>Richard Haar</name>
             <uri>https://github.com/richhaar</uri>

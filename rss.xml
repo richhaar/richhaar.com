@@ -12,7 +12,7 @@
             <link>https://richhaar.github.io/plotting-ny-with-pandas</link>
             <guid>plotting-ny-with-pandas</guid>
             <pubDate>Sat, 29 Jan 2022 00:00:00 GMT</pubDate>
-            <description><![CDATA[There are a huge amount of datasets available online, you can find many on https//opendata.cityofnewyork.us/.]]></description>
+            <description><![CDATA[There are a huge amount of datasets available online, you can find many on https://dataportals.org/ including data for the city of New York.]]></description>
         </item>
         <item>
             <title><![CDATA[Publishing C++ as a JavaScript NPM package]]></title>
